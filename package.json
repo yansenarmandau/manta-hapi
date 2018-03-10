@@ -1,0 +1,33 @@
+{
+  "name": "manta-hapi",
+  "version": "1.0.0",
+  "description": "Hapi rest API generator",
+  "main": "index.js",
+  "bin": {
+    "manta": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yansenarmandau/manta-hapi"
+  },
+  "keywords": [
+    "hapijs",
+    "hapi generator",
+    "rest api generator",
+    "generator",
+    "cli"
+  ],
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "cross-spawn": "^6.0.5",
+    "fs-extra": "^5.0.0",
+    "inquirer": "^5.1.0",
+    "js-beautify": "^1.7.5",
+    "lodash.template": "^4.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yansen <yansenarmandau.dev@gmail.com>",
+  "license": "MIT"
+}
