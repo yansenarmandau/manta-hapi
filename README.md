@@ -1,4 +1,4 @@
-# Manta Hapi js Rest Generator CLI [![npm version](https://badge.fury.io/js/manta-hapi.svg)](https://badge.fury.io/js/manta-hapi)
+# Manta Hapi js Restful API Generator CLI [![npm version](https://badge.fury.io/js/manta-hapi.svg)](https://badge.fury.io/js/manta-hapi)
 Hapi js Restful API Generator
 
 ## Table of contents
