@@ -1,6 +1,6 @@
 {
   "name": "manta-hapi",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Hapi rest API generator",
   "main": "index.js",
   "bin": {
