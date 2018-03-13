@@ -4,7 +4,6 @@ const fs = require('fs-extra')
 const path = require('path')
 const template = require('lodash.template')
 const beautify = require('js-beautify')
-const helpers = require('./index')
 
 module.exports.render = (filePath, options) => {
   const strTemplate = fs.readFileSync(path.resolve(__dirname, '..', 'templates', filePath)).toString()
@@ -20,5 +19,4 @@ module.exports.render = (filePath, options) => {
 module.exports.copy = (from, to) => {
   from = path.join(__dirname, '..', 'templates', from)
   return fs.copySync(from, to)
-  // return helpers.file.write(to, fs.readFileSync(from))
 }
