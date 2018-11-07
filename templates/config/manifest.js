@@ -37,7 +37,9 @@ let plugins = {
   },
   register: {
     plugins: [
-      <% if (authentication === 'jwt') { %>{ plugin: require('@now-ims/hapi-now-auth') },
+      <% if (authentication === 'jwt') { %>{ plugin: require('hapi-auth-jwt2') },
+          { plugin: require('./../plugins/auth') },<% } %>
+      <% if (authentication === 'basic') { %>{ plugin: require('hapi-auth-basic') },
           { plugin: require('./../plugins/auth') },<% } %>
       { plugin: routes },
       { plugin: Good, options: goodOptions }
