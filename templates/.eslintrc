@@ -1,3 +1,31 @@
 {
-  "extends": "standard"
+  "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module"
+  },
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "quotes": ["error", "single"],
+    "indent": ["error", 2, {"SwitchCase": 1}],
+    "no-console": 0,
+    "no-debugger": 0,
+    "semi": ["error", "always"],
+    "no-trailing-spaces": "error",
+    "eol-last": "error",
+    "max-len": ["error", {"code": 120, "ignoreTemplateLiterals": true, "ignoreComments": true}],
+    "no-underscore-dangle": 0,
+    "no-alert": 0,
+    "no-lone-blocks": 0,
+    "no-unused-vars": [1, {
+      "vars": "all",
+      "args": "after-used"
+    }],
+    "space-before-blocks": "error",
+    "keyword-spacing": ["error", {"before": true}],
+    "space-infix-ops": "error",
+    "comma-spacing": ["error", {"before": false, "after": true}]
+  }
 }

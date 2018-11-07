@@ -1,6 +1,6 @@
 {
   "name": "manta-hapi",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Hapi rest API generator",
   "main": "index.js",
   "bin": {
@@ -22,18 +22,13 @@
     "cross-spawn": "^6.0.5",
     "fs-extra": "^5.0.0",
     "inquirer": "^5.1.0",
-    "js-beautify": "^1.7.5",
+    "js-beautify": "^1.8.8",
     "lodash.template": "^4.4.0",
-    "semver": "^5.5.0",
+    "semver": "5.6.0",
     "validate-npm-package-name": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "^4.18.2",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-promise": "^3.7.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint": "^4.19.1"
   },
   "scripts": {
     "lint": "./node_modules/.bin/eslint .",

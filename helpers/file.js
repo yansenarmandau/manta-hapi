@@ -1,7 +1,7 @@
-'use strict'
+'use strict';
 
-const fs = require('fs-extra')
-const constants = require('./../constants')
+const fs = require('fs-extra');
+const constants = require('./../constants');
 
 /**
 * create file sync
@@ -11,8 +11,8 @@ const constants = require('./../constants')
 * @param {Integer} mode
 */
 module.exports.write = (path, string, mode) => {
-  return fs.writeFileSync(path, string, { mode: mode || constants.file.MODE_666 })
-}
+  return fs.writeFileSync(path, string, { mode: mode || constants.file.MODE_666 });
+};
 
 /**
 * mkdir -p
@@ -21,5 +21,5 @@ module.exports.write = (path, string, mode) => {
 * @param {Function} fn
 */
 module.exports.mkdir = (path) => {
-  return fs.mkdirpSync(path, constants.file.MODE_755)
-}
+  return fs.mkdirpSync(path, constants.file.MODE_755);
+};
